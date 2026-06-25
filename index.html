@@ -93,10 +93,10 @@
 
 <section id="Pag2">
         
- <div>
+ <div class="boxtexto">
        <h3>GABRIEL GUILHERME</h3>
        <h4>Estudante de Front-end</h4>
-       <h5>Sou um estudante de programação, que está começando pela área do Front-end,contiu=nuar escrevendo depois </h5>
+       <h5>Sou um estudante de programação, que está começando pela área do Front-end,eu sou uma pessoa curiosa, sou uma pessoa que lida bem com a pressão </h5>
 
 
 
@@ -104,3 +104,86 @@
 
 </section>
         <!--------------------------------------- PAGINA3 --------------------------------------->
+
+<section id="Pag3">
+ <div class="titulo-contato">
+    ENTRE EM CONTATO </br> COMIGO:
+</div>
+
+
+
+<form class="form-container" id="formulario">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Último sobrenome" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Nº, Rua, CEP e Estado" required>
+    </div>
+
+    <div class="form-group">
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" name="complemento" placeholder="Apartamento, Mercado, Casa...">
+    </div>
+
+    <button type="submit" class="btn-submit">
+    Enviar
+    </button>
+
+    <p id="mensagem" style="display:none; color:rgb(2, 152, 2); margin-top:10px;">
+        ✅ Mensagem enviada com sucesso!
+    </p>
+    
+    <script>
+window.onload = function() {
+    const form = document.getElementById("formulario");
+    const msg = document.getElementById("mensagem");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        msg.style.display = "block";
+
+        form.reset();
+    });
+};
+</script>
+
+</form>
+
+</section>
+
+
+
+
+</div>
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+</section>
